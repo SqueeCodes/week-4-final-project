@@ -40,19 +40,22 @@ li {
 .nav {
   background-color: #1fa5ff86;
   padding-bottom: 42px;
-  z-index: 200;
+  z-index: 5;
 }
 
 .plane-butt__img {
   width: 100%;
   position: absolute;
   height: 356px;
-  z-index: 1; 
+  /* z-index: 1; */
+  display: none;
 }
 
 .navbar {
-  z-index: 50;
-  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  padding-top: 16px;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -64,20 +67,58 @@ li {
 .blinker__logo__img {
   width: 142px;
   position: absolute;
+  left: 4%;
 }
 
 .nav-bar__links {
-  margin-right: 24px;
+  margin-right: 4%;
 }
 
 .nav-bar__link {
   margin-left: 12px;
+  color: #242424;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .nav-bar__contact--button {
   border-radius: 24px;
-  padding: 12px;
+  padding: 6px 18px;
   text-align: center;
+  background-color: #1fa5ffe0;
+  font-size: 16px;
+  font-weight: 700;
+}
 
+.nav-bar__btn {
+  color: #150637;
+}
+
+.nav__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+}
+
+.nav-bar__search--bar {
+  width: 50vw;
+  max-width: 526px;
+  padding: 12px;
+  border-radius: 24px;
+  /* z-index: 3; */
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  cursor: pointer;
+  top: 22.5%;
+  bottom: 0;
+  left: 70%;
+  z-index: 2;
+  padding: 0 20px 0 8px;
+  color: #6030b1;
+  font-size: 24px;
+  transition: all .2s ease;
 }
 
