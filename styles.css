@@ -1,4 +1,83 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
+
+html {
+scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+ padding: 50px 0;
+ width: 100%; 
+}
+
+.row {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+
+/*NAVIGATION*/
+
+
+.nav {
+  background-color: #1fa5ff86;
+  padding-bottom: 42px;
+  z-index: 200;
+}
+
+.plane-butt__img {
+  width: 100%;
+  position: absolute;
+  height: 356px;
+  z-index: 1; 
+}
+
+.navbar {
+  z-index: 50;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blinker__logo__img--wrapper {
+  position: absolute;
+}
+
+.blinker__logo__img {
+  width: 142px;
+  position: absolute;
+}
+
+.nav-bar__links {
+  margin-right: 24px;
+}
+
+.nav-bar__link {
+  margin-left: 12px;
+}
+
+.nav-bar__contact--button {
+  border-radius: 24px;
+  padding: 12px;
+  text-align: center;
+
+}
+
