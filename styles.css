@@ -22,13 +22,13 @@ li {
 }
 
 .container {
- padding: 50px 0;
+ padding: 48px 0;
  width: 100%; 
 }
 
 .row {
   width: 100%;
-  min-width: 1200px;
+  max-width: 20000px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -41,38 +41,62 @@ li {
   background-color: #1fa5ff86;
   padding-bottom: 42px;
   z-index: 5;
+  height: 296px;
+  
 }
+
+
+.plane-butt__img--wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 
 .plane-butt__img {
   width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
   position: absolute;
-  height: 356px;
-  /* z-index: 1; */
-  display: none;
+  z-index: -1;
+  
 }
 
-.navbar {
-  max-width: 1600px;
+.plane-butt__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-top: 16px;
+  height: inherit;
+  background-color: #1fa5ff86;
   z-index: 2;
+  pointer-events: none; 
+}
+
+
+.nav-bar {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 16px;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
 }
 
-.blinker__logo__img--wrapper {
-  position: absolute;
-}
+
 
 .blinker__logo__img {
   width: 142px;
-  position: absolute;
-  left: 4%;
+  /* position: absolute; */
+  /* left: 8%; */
 }
 
-.nav-bar__links {
+/* .nav-bar__links {
   margin-right: 4%;
-}
+} */
 
 .nav-bar__link {
   margin-left: 12px;
@@ -85,7 +109,7 @@ li {
   border-radius: 24px;
   padding: 6px 18px;
   text-align: center;
-  background-color: #1fa5ffe0;
+  background-color: #1fa5ff5b;
   font-size: 16px;
   font-weight: 700;
 }
@@ -98,7 +122,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2;
+  margin-top: 56px;
+}
+
+.nav__title--description {
+  color: #ffffff;
+  margin-top: 6%;
+  
 }
 
 .nav-bar__search--bar {
@@ -107,14 +137,16 @@ li {
   border: 1px solid #ccc;
   border-radius: 24px;
   font-size: 16px;
+  margin-top: 48px;
 }
 
 .fa-magnifying-glass {
   position: absolute;
   right: 10px;
+  top: 60px;
   color: #74C0FC;
   font-size: 18px;
-  pointer-events: none; 
+  cursor: pointer; 
 }
 
 .search__flights--wrapper {
@@ -122,5 +154,5 @@ li {
   display: flex;
   align-items: center;
   width: 75%;
-  max-width: 460px;
+  max-width: 560px;
 }
