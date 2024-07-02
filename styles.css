@@ -106,19 +106,19 @@ li {
   max-width: 526px;
   padding: 12px;
   border-radius: 24px;
+  position: relative;
+
   /* z-index: 3; */
 }
 
 .fa-magnifying-glass {
   position: absolute;
   cursor: pointer;
-  top: 22.5%;
-  bottom: 0;
-  left: 70%;
-  z-index: 2;
-  padding: 0 20px 0 8px;
   color: #6030b1;
   font-size: 24px;
   transition: all .2s ease;
 }
 
+.search__flights--wrapper {
+  display: inline;
+}
