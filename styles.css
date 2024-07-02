@@ -41,7 +41,7 @@ li {
   background-color: #1fa5ff86;
   padding-bottom: 42px;
   z-index: 5;
-  height: 296px;
+  max-height: 426px;
   
 }
 
@@ -49,32 +49,17 @@ li {
 .plane-butt__img--wrapper {
   position: relative;
   width: 100%;
-  height: auto;
-}
-
-
-.plane-butt__img {
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 1;
-  position: absolute;
-  z-index: -1;
+  max-height: 426px;
   
 }
 
-.plane-butt__img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.plane-butt__img {
   width: 100%;
-  height: inherit;
-  background-color: #1fa5ff86;
-  z-index: 2;
-  pointer-events: none; 
+  position: absolute;
+  z-index: -1;
+  max-height: 426px;
+  
 }
-
 
 .nav-bar {
   max-width: 1400px;
