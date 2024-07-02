@@ -102,23 +102,25 @@ li {
 }
 
 .nav-bar__search--bar {
-  width: 50vw;
-  max-width: 526px;
-  padding: 12px;
+  width: 100%;
+  padding: 10px 40px 10px 20px; 
+  border: 1px solid #ccc;
   border-radius: 24px;
-  position: relative;
-
-  /* z-index: 3; */
+  font-size: 16px;
 }
 
 .fa-magnifying-glass {
   position: absolute;
-  cursor: pointer;
-  color: #6030b1;
-  font-size: 24px;
-  transition: all .2s ease;
+  right: 10px;
+  color: #74C0FC;
+  font-size: 18px;
+  pointer-events: none; 
 }
 
 .search__flights--wrapper {
-  display: inline;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  max-width: 460px;
 }
