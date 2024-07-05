@@ -28,7 +28,7 @@ li {
 
 .row {
   width: 100%;
-  max-width: 20000px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -51,8 +51,6 @@ li {
   height: auto;
   max-height: 426px;
   z-index: -1;
-
-
 }
 
 .plane-butt__img {
@@ -71,20 +69,11 @@ li {
   z-index: 99;
 }
 
-.background__img {
-  background-image:url(./assets/airplanebutt.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 426px;
-  padding: 0;
-}
-
 .nav-bar {
   max-width: 1400px;
   margin: 0 auto;
   width: 75%;
-  padding-top: 16px;
+  padding-top: 24px;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -126,30 +115,30 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 56px;
+  margin-top: 5%;
 }
 
 .nav__title--description {
   color: #ffffff;
-  margin-top: 6%;
+  margin-top: 2%;
   
 }
 
 .nav-bar__search--bar {
   width: 100%;
-  padding: 10px 40px 10px 20px; 
+  padding: 14px 24px; 
   border: 1px solid #ccc;
-  border-radius: 24px;
-  font-size: 16px;
+  border-radius: 50px;
+  font-size: 24px;
   margin-top: 48px;
 }
 
 .fa-magnifying-glass {
   position: absolute;
-  right: 10px;
+  right: 18px;
   top: 60px;
   color: #74C0FC;
-  font-size: 18px;
+  font-size: 32px;
   cursor: pointer; 
 }
 
@@ -159,4 +148,40 @@ li {
   align-items: center;
   width: 75%;
   max-width: 560px;
+}
+
+/*PRICE RANGE*/
+
+.search--results__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0 32px 0;
+}
+
+.search--results {
+  font-size: 28px;
+}
+
+/*FLIGHTS*/
+
+.flight--board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flights {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 256px;
+  padding: 56px 24px;
+  margin: 24px 24px;
 }
