@@ -14,15 +14,15 @@ fetch('https://potterapi-fedeperin.vercel.app/en/spells')
 async function main() {
     const spells = await fetch("https://potterapi-fedeperin.vercel.app/en/spells");
     const spellsData = await spells.json();
-    console.log(
-    spellsData.map(spell => `<div class="spells">
-        <div class="spell--details">
-          <h1>Spell Name</h1>
-          <p class="spell__description">Description of spell</p>
-        </div>
-      </div>` )
-    .join("")
-);
+    const spellBoardEl = document.querySelector(".spell--board");
+    spellBoardEl.innerHTML = spellsData.map(
+        spell => `<div class="spells">
+                    <div class="spell--details">
+                        <h1>${spell.spell}</h1>
+                        <p class="spell__description">${spell.use}</p>
+                    </div>
+                </div>` )
+    .join("");
 }
 
 main()
