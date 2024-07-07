@@ -142,7 +142,7 @@ li {
   cursor: pointer; 
 }
 
-.search__spells--wrapper {
+.search__characters--wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -163,15 +163,15 @@ li {
   font-size: 28px;
 }
 
-/*SPELLS*/
+/*CHARACTERS*/
 
-.spell--board {
+.characters--board {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.spells {
+.characters {
   border: 2px solid #dcd3d3;
   border-radius: 8px;
   width: calc(100%/3);

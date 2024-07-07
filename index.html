@@ -29,18 +29,18 @@
             <a class="nav-bar__link" href="#">Home</a>
             <a class="nav-bar__link" href="#">Contact</a>
             <button class="nav-bar__contact--button nav-bar__link">
-              <a class="nav-bar__btn" href="#">Spells</a>
+              <a class="nav-bar__btn" href="#">characters</a>
             </button>
           </div>
         </div>
       </div>
       <div class="nav__title">
-          <div class="search__spells--wrapper">
-            <input  class="nav-bar__search--bar" type="search" placeholder="search spells...">
+          <div class="search__characters--wrapper">
+            <input  class="nav-bar__search--bar" type="search" placeholder="search characters...">
             <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
           </input>
         </div>
-          <h1 class="nav__title--description">Search spells across the wizarding world!</h1>
+          <h1 class="nav__title--description">Search characters across the wizarding world!</h1>
         </div>
       </div>
       </div>
@@ -55,74 +55,21 @@
       </div>
     </section>
   </section>
-  <section id="spells">
+  <section id="characters">
     <div class="container">
       <div class="row">
-        <div class="spell--board">
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
+        <div class="characters--board">
+          <div class="characters" onclick="characterInfoHTML()">
+            <div class="character--img__wrapper">
+                <figure>
+                    <img class="character--img" src="" alt="">${character.image}</img>
+                </figure>
             </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
-            </div>
-          </div>
-          <div class="spells">
-            <div class="spell--details">
-              <h1>Spell Name</h1>
-              <p class="spell__description">Description of spell</p>
+            <div class="character--details">
+                <h1 class="fullname">${character.fullName}</h1>
+                <h2 class="nickname">${character.nickname}</h2>
+                <h3 class="hogwarts--house">${character.hogwartsHouse}</h3>
+                <p class="played-by">${character.interpretedBy}</p>
             </div>
           </div>
         </div>
