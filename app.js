@@ -15,14 +15,16 @@ async function main() {
     const spells = await fetch("https://potterapi-fedeperin.vercel.app/en/spells");
     const spellsData = await spells.json();
     const spellBoardEl = document.querySelector(".spell--board");
-    spellBoardEl.innerHTML = spellsData.map(
-        spell => `<div class="spells">
-                    <div class="spell--details">
-                        <h1>${spell.spell}</h1>
-                        <p class="spell__description">${spell.use}</p>
-                    </div>
-                </div>` )
-    .join("");
+    spellBoardEl.innerHTML = spellsData.map((spell) => spellHTML(spell)).join("");
 }
 
-main()
+main();
+
+function spellHTML(spell) {
+    return `<div class="spells">
+                <div class="spell--details">
+                    <h1>${spell.spell}</h1>
+                    <p class="spell__description">${spell.use}</p>
+                </div>
+            </div>`
+}
