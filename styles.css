@@ -45,7 +45,7 @@ li {
 }
 
 
-.plane-butt__img--wrapper {
+.dobby__img--wrapper {
   position: relative;
   width: 100%;
   height: auto;
@@ -53,7 +53,7 @@ li {
   z-index: -1;
 }
 
-.plane-butt__img {
+.dobby__img {
   width: 100%;
   position: absolute;
   z-index: -3;
@@ -142,7 +142,7 @@ li {
   cursor: pointer; 
 }
 
-.search__flights--wrapper {
+.search__spells--wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -163,15 +163,15 @@ li {
   font-size: 28px;
 }
 
-/*FLIGHTS*/
+/*SPELLS*/
 
-.flight--board {
+.spell--board {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.flights {
+.spells {
   border: 2px solid #dcd3d3;
   border-radius: 8px;
   width: calc(100%/3);
