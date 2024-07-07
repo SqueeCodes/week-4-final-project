@@ -11,10 +11,13 @@ fetch('https://potterapi-fedeperin.vercel.app/en/spells')
         console.log(res)
     })
 
+const spellBoardEl = document.querySelector(".spell--board");
+
+
+
 async function main() {
     const spells = await fetch("https://potterapi-fedeperin.vercel.app/en/spells");
     const spellsData = await spells.json();
-    const spellBoardEl = document.querySelector(".spell--board");
     spellBoardEl.innerHTML = spellsData.map((spell) => spellHTML(spell)).join("");
 }
 
