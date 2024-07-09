@@ -40,16 +40,4 @@ function fullCharacterInfo(id) {
     localStorage.setItem("id84", id)
     console.log(window.location);
     window.location.href = `${window.location.origin}/character.html`
-    return `<div class="character--img__wrapper">
-                <figure>
-                    <img class="character--img src="${character.image}" alt="">
-                </figure>
-            </div>
-            <div class="character--details">
-                <h1 class="fullname">${character.fullName}</h1>
-                <h2 class="hogwarts--house">${character.hogwartsHouse}</h2>
-                <h3 class="character--birthdate">${character.birthdate}</h3>                        
-                <h4 class="character--childs">${character.children}</h4>
-                <p class="played-by">${character.interpretedBy}</p>
-            </div>`
 }
