@@ -3,77 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hogwarts character snoop tool</title>
+  <title>Hogwarts Character Snoop Tool</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer> </script>
-  <script src="characters.js" defer> </script>
+  <script src="app.js" defer></script>
+  <script src="characters.js" defer></script>
   <script src="https://kit.fontawesome.com/350c2510e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section id="navigation">
-    <div class="conatiner">
+    <div class="container">
       <div class="nav__row">
         <div class="nav">
           <div class="dobby__img--wrapper">
             <figure>
               <img class="dobby__img" src="./assets/20-best-secondary-harry-potter-characters-ranked.webp" alt="">
             </figure>
-        </div>
-        <div class="nav-bar__wrapper">
-          <div class="nav-bar">
-            <div>
-              <figure class="blinker__logo__im--wrapper">
-                <img class="blinker__logo__img" src="./assets/blinkerimg.png" alt="">
-              </figure>
+          </div>
+          <div class="nav-bar__wrapper">
+            <div class="nav-bar">
+              <div>
+                <figure class="blinker__logo__im--wrapper">
+                  <img class="blinker__logo__img" src="./assets/blinkerimg.png" alt="">
+                </figure>
+              </div>
+              <div class="nav-bar__links">
+                <a class="nav-bar__link" href="#">Home</a>
+                <a class="nav-bar__link" href="#">Contact</a>
+                <button class="nav-bar__contact--button nav-bar__link">
+                  <a class="nav-bar__btn" href="#">Characters</a>
+                </button>
+              </div>
             </div>
-          <div class="nav-bar__links">
-            <a class="nav-bar__link" href="#">Home</a>
-            <a class="nav-bar__link" href="#">Contact</a>
-            <button class="nav-bar__contact--button nav-bar__link">
-              <a class="nav-bar__btn" href="#">characters</a>
-            </button>
+          </div>
+          <div class="nav__title">
+            <div class="search__characters--wrapper">
+              <input class="nav-bar__search--bar" type="search" placeholder="Search characters...">
+              <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
+            </div>
+            <h1 class="nav__title--description">Search characters across the wizarding world!</h1>
           </div>
         </div>
-      </div>
-      <div class="nav__title">
-          <div class="search__characters--wrapper">
-            <input  class="nav-bar__search--bar" type="search" placeholder="search characters...">
-            <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
-          </input>
-        </div>
-          <h1 class="nav__title--description">Search characters across the wizarding world!</h1>
-        </div>
-      </div>
       </div>
     </div>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="search--results__wrapper">
-            <h1 class="search--results">Search results: </h1>
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
   <section id="characters">
     <div class="container">
       <div class="row">
-        <div class="characters--board">
-          <div class="characters" onclick="fullCharacterInfo()">
-            <div class="character--img__wrapper">
-                <figure>
-                    <img class="character--img" src="" alt="">${character.image}</img>
-                </figure>
-            </div>
-            <div class="character--details">
-                <h1 class="fullname">${character.fullName}</h1>
-                <h2 class="nickname">${character.nickname}</h2>
-                <h3 class="hogwarts--house">${character.hogwartsHouse}</h3>
-                <p class="played-by">${character.interpretedBy}</p>
-            </div>
-          </div>
-        </div>
+        <div class="characters--board"></div>
       </div>
     </div>
   </section>
