@@ -166,10 +166,9 @@ li {
 /*CHARACTERS*/
 
 .characters--board {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+b }
 
 .characters {
   border: 2px solid #dcd3d3;
