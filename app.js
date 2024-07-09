@@ -24,7 +24,7 @@ async function main() {
 main();
 
 function characterHTML(character) {
-    return `<div class="characters">
+    return `<div class="characters" onclick="fullCharacterInfo(${character.id})">
                 <div class="character--img__wrapper">
                     <figure>
                         <img class="character--img src="${character.image}" alt="">
@@ -36,7 +36,10 @@ function characterHTML(character) {
             </div>`
 }
 
-function characterInfoHTML(character) {
+function fullCharacterInfo(id) {
+    localStorage.setItem("id84", id)
+    console.log(window.location);
+    window.location.href = `${window.location.origin}/character.html`
     return `<div class="character--img__wrapper">
                 <figure>
                     <img class="character--img src="${character.image}" alt="">
