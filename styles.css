@@ -185,3 +185,30 @@ li {
   padding: 56px 24px;
   margin: 24px 24px;
 }
+
+.character--img {
+  width: 100%;
+}
+
+
+
+.fullname {
+margin: 12px 0;
+}
+
+.hogwarts--house {
+  margin-bottom: 12px;
+}
+
+.character--birthdate {
+  margin-top: 24px;
+}
+
+.character--childs {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.played-by {
+  line-height: 1.5;
+}

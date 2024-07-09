@@ -27,15 +27,15 @@ function characterHTML(character) {
     return `<div class="characters">
                 <div class="character--img__wrapper">
                     <figure>
-                        <img class="character--img src="${character.image}" alt="">
+                        <img class="character--img" src="${character.image}" alt="">
                     </figure>
                 </div>
                 <div class="character--details">
                 <h1 class="fullname">${character.fullName}</h1>
                 <h2 class="hogwarts--house">${character.hogwartsHouse}</h2>
-                <h3 class="character--birthdate">${character.birthdate}</h3>                        
-                <h4 class="character--childs">${character.children}</h4>
-                <p class="played-by">${character.interpretedBy}</p>
+                <h4 class="character--childs">Children: <br>${character.children}</h4>
+                <p class="played-by">Played by: <br>${character.interpretedBy}</p>
+                <h3 class="character--birthdate">Born:   ${character.birthdate}</h3>                        
                 </div>
             </div>`
 }
