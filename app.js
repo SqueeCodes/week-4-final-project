@@ -13,6 +13,9 @@ function getChildrenText(children) {
 
 function characterHTML(character) {
     return `<div class="characters">
+                <figure class="card--background__wrapper">
+              <img class="card--background" src="./assets/wizard card template2.png" alt="">
+                </figure>
               <div class="character--img__wrapper">
                 <figure>
                   <img class="character--img" src="${character.image}" alt="">

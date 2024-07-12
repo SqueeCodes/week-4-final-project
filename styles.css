@@ -170,42 +170,61 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .characters {
-  border: 2px solid #dcd3d3;
-  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
   max-width: 356px;
-  padding: 24px 24px;
   margin: 24px 24px;
+  position: relative;
+}
+
+.card--background__wrapper {
+  position: absolute;
+  height: 100%;
+} 
+
+.card--background {
+  border-radius: 18px;
+  max-width: 356px;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
 }
 
 .character--img {
   width: 100%;
+  border-radius: 18px;
 }
 
 .fullname {
-margin: 12px 0;
+  margin: 12px 0;
+  font-size: 24px;
 }
 
 .hogwarts--house {
   margin-bottom: 12px;
+  font-size: 18px;
+
 }
 
 .character--birthdate {
   margin-top: 24px;
+  font-size: 18px;
+
 }
 
 .character--childs {
   margin-bottom: 12px;
-  line-height: 1.5;
+  
 }
 
 .played-by {
-  line-height: 1.5;
+  padding: 8px 0 42px 0;
 }
