@@ -40,7 +40,7 @@
           <div class="nav__title">
             <div class="search__characters--wrapper">
               <input class="nav-bar__search--bar" type="search" placeholder="Search characters...">
-              <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
+              <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
             </div>
             <h1 class="nav__title--description">Search characters across the wizarding world!</h1>
           </div>
@@ -51,13 +51,16 @@
   <section id="characters">
     <div class="container">
       <div class="nav__row">
-        <div class="characters--board">
-          <div class="search--results__wrapper">
-            <h1 class="search--results">Search Results:</h1>
-            <div>
-              <h1>page filter</h1>
-            </div>
+        <div class="search--results__wrapper">
+          <h1 class="search--results">Search Results:</h1>
+          <div>
+            <h1>Page:
+              <input id="page-input" class="index__filter" type="number" min="1" value="1" onchange="loadPage()">
+            </h1>
           </div>
+        </div>
+        <div class="characters--board">
+
 
         </div>
       </div>

@@ -135,6 +135,10 @@ li {
   margin-top: 48px;
 }
 
+.hidden {
+  display: none;
+}
+
 .fa-magnifying-glass {
   position: absolute;
   right: 18px;
@@ -158,11 +162,17 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 56px 0 32px 0;
+  padding: 12px 0 96px 0;
 }
 
 .search--results {
   font-size: 28px;
+}
+
+.index__filter {
+  width: 42px;
+  height: 36px;
+  font-size: 24px;
 }
 
 /*CHARACTERS*/
@@ -176,7 +186,6 @@ li {
 }
 
 .characters {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,6 +194,9 @@ li {
   max-width: 356px;
   margin: 24px 24px;
   position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 1px 36px 1px #242424;
 }
 
 .card--background__wrapper {
@@ -193,7 +205,7 @@ li {
 } 
 
 .card--background {
-  border-radius: 18px;
+  border-radius: 12px;
   max-width: 356px;
   width: 100%;
   z-index: 1;
@@ -224,9 +236,11 @@ li {
 
 .character--childs {
   margin-bottom: 12px;
+  padding: 24px;
   
 }
 
 .played-by {
   padding: 8px 0 42px 0;
+  margin-bottom: 40px;
 }
