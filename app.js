@@ -35,10 +35,19 @@ function characterHTML(character) {
           </div>`;
 }
 
+function skeletonHTML() {
+  return `<div class="skeleton-card pulse"></div>`;
+}
+
 function displayCharacters(characters, pageIndex = 0) {
   const startIndex = pageIndex * 8;
   const endIndex = startIndex + 8;
   characterBoardEl.innerHTML = characters.slice(startIndex, endIndex).map((character) => characterHTML(character)).join("");
+}
+
+function showSkeletons() {
+  const skeletons = Array(8).fill("").map(() => skeletonHTML()).join("");
+  characterBoardEl.innerHTML = skeletons;
 }
 
 async function main() {
@@ -47,18 +56,19 @@ async function main() {
 }
 
 async function handleSearch() {
+  showSkeletons();
   const query = searchInputEl.value.toLowerCase();
   const filteredCharacters = allCharacters.filter(character => 
       character.fullName.toLowerCase().includes(query) ||
       character.hogwartsHouse.toLowerCase().includes(query) ||
       character.interpretedBy.toLowerCase().includes(query)
   );
-  displayCharacters(filteredCharacters);
+  setTimeout(() => { displayCharacters(filteredCharacters); }, 1600);
 }
 
 function loadPage() {
   const pageInputEl = document.getElementById("page-input");
-  const pageIndex = parseInt(pageInputEl.value, 10) - 1; // Convert to zero-based index
+  const pageIndex = parseInt(pageInputEl.value, 10) - 1;
   displayCharacters(allCharacters, pageIndex);
 }
 
