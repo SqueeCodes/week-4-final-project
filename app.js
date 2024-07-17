@@ -45,8 +45,8 @@ function displayCharacters(characters, pageIndex = 0) {
   characterBoardEl.innerHTML = characters.slice(startIndex, endIndex).map((character) => characterHTML(character)).join("");
 }
 
-function showSkeletons() {
-  const skeletons = Array(8).fill("").map(() => skeletonHTML()).join("");
+function showSkeletons(count) {
+  const skeletons = Array(count).fill("").map(() => skeletonHTML()).join("");
   characterBoardEl.innerHTML = skeletons;
 }
 
@@ -63,13 +63,17 @@ async function handleSearch() {
       character.hogwartsHouse.toLowerCase().includes(query) ||
       character.interpretedBy.toLowerCase().includes(query)
   );
-  setTimeout(() => { displayCharacters(filteredCharacters); }, 1600);
+  showSkeletons(filteredCharacters.length);
+  setTimeout(() => {displayCharacters(filteredCharacters); }, 1600);
 }
 
 function loadPage() {
   const pageInputEl = document.getElementById("page-input");
   const pageIndex = parseInt(pageInputEl.value, 10) - 1;
-  displayCharacters(allCharacters, pageIndex);
+  const startIndex = pageIndex * 8;
+  const endIndex = Math.min(startIndex + 8, allCharacters.length);
+  showSkeletons(endIndex - startIndex);
+  setTimeout(() => {displayCharacters(allCharacters, pageIndex);}, 1600);
 }
 
 function toggleSearchIcon() {

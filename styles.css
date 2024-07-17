@@ -272,7 +272,7 @@ li {
 .skeleton-card {
   width: 100%;
   max-width: 356px;
-  height: 450px; /* Adjust height to match the card */
+  height: 646px;
   margin: 24px 24px;
   background-color: #f0f0f0;
   border-radius: 12px;
